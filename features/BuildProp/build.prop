@@ -327,7 +327,7 @@ ro.min.fling_velocity=8000
 ro.min_pointer_dur=8
 touch.pressure.scale=0.1
 # Video Acceleration Enabled And HW debugging
-debug.hwui.renderer=skiagl
+debug.hwui.renderer=vulkan
 video.accelerate.hw=1
 debug.sf.hw=1
 debug.performance.tuning=1
