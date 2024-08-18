@@ -26,6 +26,7 @@ echo ""
 echo "1: Build Prop"
 echo "2: Floating Features"
 echo "3: Camera Features"
+echo "0: Back to main menu"
 read -p "Choose: " user_a235f_ff
 
 if [ $user_a235f_ff == 1 ]
@@ -258,4 +259,8 @@ echo "Will Back To Main Menu Again"
 sleep 3
 
 clear ; bash features/BuildProp/A235F/Flagship-Features-A235F.sh
+fi
+if [ $user_a235f_ff == 0 ]
+then
+bash AFFT.sh
 fi
