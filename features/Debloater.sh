@@ -1,6 +1,6 @@
 #!/bin/bash
-clear
 
+clear
 base64 -d <<<"Cl9fX19fXyAgICAgXyAgICAgXyAgICAgICAgICAgICBfICAgICAgICAgICAgCnwgIF8gIFwgICB8
 IHwgICB8IHwgICAgICAgICAgIHwgfCAgICAgICAgICAgCnwgfCB8IHxfX198IHxfXyB8IHwgX19f
 ICAgX18gX3wgfF8gX19fIF8gX18gCnwgfCB8IC8gXyBcICdfIFx8IHwvIF8gXCAvIF9gIHwgX18v
@@ -43,3 +43,4 @@ fi
 if [ $user_debloat == 0 ]
 then
 bash AFFT.sh
+fi
