@@ -182,7 +182,7 @@ sleep 3
 clear ; bash features/BuildProp/A235M/Flagship-Features-A235M.sh
 fi
 
-if [ $user_a235m_ff == 2 ]
+if [ $user_a235m_ff == 3 ]
 then
 
 echo -e "\033[34mInstallation will start now\033[0m"
