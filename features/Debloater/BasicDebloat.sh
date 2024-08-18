@@ -111,7 +111,7 @@ sleep 2
 echo "Done"
 bash AFFT.sh
 fi
-if [ $user_debloat == 2 ]
+if [ $user_debloat == n ]
 then
 bash AFFT.sh
 fi
