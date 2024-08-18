@@ -1,5 +1,6 @@
 #!/bin/bash
 clear
+
 base64 -d <<<"Cl9fX19fXyAgICAgXyAgICAgXyAgICAgICAgICAgICBfICAgICAgICAgICAgCnwgIF8gIFwgICB8
 IHwgICB8IHwgICAgICAgICAgIHwgfCAgICAgICAgICAgCnwgfCB8IHxfX198IHxfXyB8IHwgX19f
 ICAgX18gX3wgfF8gX19fIF8gX18gCnwgfCB8IC8gXyBcICdfIFx8IHwvIF8gXCAvIF9gIHwgX18v
@@ -7,6 +8,7 @@ IF8gXCAnX198CnwgfC8gLyAgX18vIHxfKSB8IHwgKF8pIHwgKF98IHwgfHwgIF9fLyB8ICAgCnxf
 X18vIFxfX198Xy5fXy98X3xcX19fLyBcX18sX3xcX19cX19ffF98ICAgCiAgICAgICAgICAgICAg
 ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAg
 ICAgICAgICAgICAgICAgICAgCg===="
+
 sleep 1
 echo "Debloat Scripts (AFFT X invinciblevenom)"
 echo ""
@@ -20,6 +22,7 @@ echo "1: Standard Debloat"
 echo "2: Basic Debloat"
 echo "3: Light Debloat"
 echo "4: Heavy Debloat"
+echo "0: Back to main menu"
 read -p "Choose: " user_debloat
 if [ $user_debloat == 1 ]
 then
@@ -37,3 +40,6 @@ if [ $user_debloat == 4 ]
 then
 bash features/Debloat/HeavyDebloat.sh
 fi
+if [ $user_debloat == 0 ]
+then
+bash AFFT.sh
