@@ -20,6 +20,8 @@
 - Performance Profile
 - Processing Speed
 - Smooth Scroll
+- Smooth UI
+- Reduce Lags
 - Save Battery Without Performance Drop
 - Dolby Atmos without Headsets
 - Dolby Atmos in Games
@@ -40,14 +42,19 @@
 - Fun Features, a new section that include a lot of funny things like( "Scamsung" Bootanimation)
 
 📷Camera:
-- Zoom bar in Pro video
-- Slow Motion
-- Hyperlapse UHD
+- Support Scene Optimizer
+- Live Focus
+- Intelligent features
+- VDIS+Tracking AF
+- Pro Video
+- Super Steady
+- Hyperlapse
+- Live Blur
+- Post Processing Features 
+- HEIF format
+- camera assistant
 - Improved HDR
-- Single-take video
 - Expert RAW
-- Pro Mode
-- Pro Video Mode
 - Motion Photo
 - Take Photos While Recording Video
 
