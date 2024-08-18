@@ -10,8 +10,6 @@ echo "Uninstall Android Auto (y/n)?"
 
 read -p "Choose: " user
 
-fi
-
 if [ $user == y ]
 
 then
