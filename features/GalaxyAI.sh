@@ -28,7 +28,7 @@ then
 echo ""
 echo -e "\033[34mWill Copy AI Wallpaper App to folder AFFT_FILES, Check it\033[0m"
 sleep 2
-mkdir /sdcard/AFFT_FILES ; cp Apps/AIWallpapers/*.apk /sdcard/AFFT_FILES
+mkdir /sdcard/AFFT_FILES ; cp features/Apps/AIWallpapers/*.apk /sdcard/AFFT_FILES
 sleep 3
 echo ""
 echo "Done"
