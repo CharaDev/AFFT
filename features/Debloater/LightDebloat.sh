@@ -1,6 +1,10 @@
 #!/bin/bash
 clear
 echo "Light Debloat Starting"
+echo "Do you want to continue? (y/n)"
+read -p "Choose: " user_debloat
+if [ $user_debloat == y ]
+then
 sleep 2
 sudo pm uninstall --user 0 android.autoinstalls.config.samsung
 sudo pm uninstall --user 0 com.android.bips
@@ -157,3 +161,8 @@ sudo pm uninstall --user 0 com.snap.camerakit.plugin.v1
 sleep 2
 echo "Done"
 bash AFFT.sh
+fi
+if [ $user_debloat == n ]
+then
+bash AFFT.sh
+fi
