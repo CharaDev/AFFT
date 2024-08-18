@@ -1,0 +1,53 @@
+clear
+base64 -d <<<"CuKWiOKWiOKWiOKWiOKWiOKWiOKVlyDilojilojilojilojilojilojilojilZfilojilojiloji
+lojilojilojilZcg4paI4paI4pWXICAgICAg4paI4paI4paI4paI4paI4paI4pWXICDilojiloji
+lojilojilojilZcg4paI4paI4paI4paI4paI4paI4paI4paI4pWX4paI4paI4paI4paI4paI4paI
+4paI4pWX4paI4paI4paI4paI4paI4paI4pWXIArilojilojilZTilZDilZDilojilojilZfiloji
+lojilZTilZDilZDilZDilZDilZ3ilojilojilZTilZDilZDilojilojilZfilojilojilZEgICAg
+IOKWiOKWiOKVlOKVkOKVkOKVkOKWiOKWiOKVl+KWiOKWiOKVlOKVkOKVkOKWiOKWiOKVl+KVmuKV
+kOKVkOKWiOKWiOKVlOKVkOKVkOKVneKWiOKWiOKVlOKVkOKVkOKVkOKVkOKVneKWiOKWiOKVlOKV
+kOKVkOKWiOKWiOKVlwrilojilojilZEgIOKWiOKWiOKVkeKWiOKWiOKWiOKWiOKWiOKVlyAg4paI
+4paI4paI4paI4paI4paI4pWU4pWd4paI4paI4pWRICAgICDilojilojilZEgICDilojilojilZHi
+lojilojilojilojilojilojilojilZEgICDilojilojilZEgICDilojilojilojilojilojilZcg
+IOKWiOKWiOKWiOKWiOKWiOKWiOKVlOKVnQrilojilojilZEgIOKWiOKWiOKVkeKWiOKWiOKVlOKV
+kOKVkOKVnSAg4paI4paI4pWU4pWQ4pWQ4paI4paI4pWX4paI4paI4pWRICAgICDilojilojilZEg
+ICDilojilojilZHilojilojilZTilZDilZDilojilojilZEgICDilojilojilZEgICDilojiloji
+lZTilZDilZDilZ0gIOKWiOKWiOKVlOKVkOKVkOKWiOKWiOKVlwrilojilojilojilojilojiloji
+lZTilZ3ilojilojilojilojilojilojilojilZfilojilojilojilojilojilojilZTilZ3iloji
+lojilojilojilojilojilojilZfilZrilojilojilojilojilojilojilZTilZ3ilojilojilZEg
+IOKWiOKWiOKVkSAgIOKWiOKWiOKVkSAgIOKWiOKWiOKWiOKWiOKWiOKWiOKWiOKVl+KWiOKWiOKV
+kSAg4paI4paI4pWRCuKVmuKVkOKVkOKVkOKVkOKVkOKVnSDilZrilZDilZDilZDilZDilZDilZDi
+lZ3ilZrilZDilZDilZDilZDilZDilZ0g4pWa4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWdIOKVmuKVkOKV
+kOKVkOKVkOKVkOKVnSDilZrilZDilZ0gIOKVmuKVkOKVnSAgIOKVmuKVkOKVnSAgIOKVmuKVkOKV
+kOKVkOKVkOKVkOKVkOKVneKVmuKVkOKVnSAg4pWa4pWQ4pWdCiAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCg=="
+sleep 1
+echo "Debloat Scripts (AFFT X invinciblevenom)"
+echo ""
+echo "Standard Debloat => The old method"
+echo "Basic Debloat => For users who want to sign in to their Samsung account."
+echo "Light Debloat => Recommended for users without a Samsung account."
+echo "Heavy Debloat => Removes almost all removable apps for maximum system optimization. Be aware that many features might become unavailable."
+echo ""
+sleep 1
+echo "1: Standard Debloat"
+echo "2: Basic Debloat"
+echo "3: Light Debloat"
+echo "4: Heavy Debloat"
+read -p "Choose: " user_debloat
+if [ $user_debloat == 1 ]
+then
+bash features/Debloat/StandardDebloat.sh
+fi
+if [ $user_debloat == 2 ]
+then
+bash features/Debloat/BasicDebloat.sh
+fi
+if [ $user_debloat == 3 ]
+then
+bash features/Debloat/LightDebloat.sh
+fi
+if [ $user_debloat == 4 ]
+then
+bash features/Debloat/HeavyDebloat.sh
+fi
