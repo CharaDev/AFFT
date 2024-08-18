@@ -26,19 +26,19 @@ echo "0: Back to main menu"
 read -p "Choose: " user_debloat
 if [ $user_debloat == 1 ]
 then
-bash features/Debloat/StandardDebloat.sh
+bash features/Debloater/StandardDebloat.sh
 fi
 if [ $user_debloat == 2 ]
 then
-bash features/Debloat/BasicDebloat.sh
+bash features/Debloater/BasicDebloat.sh
 fi
 if [ $user_debloat == 3 ]
 then
-bash features/Debloat/LightDebloat.sh
+bash features/Debloater/LightDebloat.sh
 fi
 if [ $user_debloat == 4 ]
 then
-bash features/Debloat/HeavyDebloat.sh
+bash features/Debloater/HeavyDebloat.sh
 fi
 if [ $user_debloat == 0 ]
 then
