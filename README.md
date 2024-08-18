@@ -9,7 +9,7 @@
 
 <br />
 
-# V6.3.0 - Stable Released
+# V7.0.0 - Stable Released
 
 </div>
 
