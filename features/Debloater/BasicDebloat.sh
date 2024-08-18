@@ -1,3 +1,4 @@
+#!/bin/bash
 clear
 echo "Basic Debloat Starting"
 echo "Do you want to continue? (y/n)"
