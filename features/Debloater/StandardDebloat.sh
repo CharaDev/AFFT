@@ -1,7 +1,10 @@
 #!/bin/bash
-
 clear
 echo "Standard Debloat"
+echo "Do you wnat to continue? (y/n)"
+read -p "Choose: " user_debloat
+if [ $user_debloat == y ]
+then
 sleep 1
 echo "Uninstall Android Auto (y/n)?"
 
@@ -1738,3 +1741,8 @@ echo "Will Back To Main Menu"
 sleep 1
 
 clear ; bash AFFT.sh
+fi
+if [ $user_debloat == n ]
+then
+bash AFFT.sh
+fi
