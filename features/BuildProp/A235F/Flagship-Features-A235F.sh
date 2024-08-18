@@ -21,6 +21,17 @@ echo ""
 
 sleep 1
 
+echo "Choose What You Want"
+echo ""
+echo "1: Build Prop"
+echo "2: Floating Features"
+echo "3: Camera Features"
+echo "0: Back to main menu"
+read -p "Choose: " user_a235f_ff
+
+if [ $user_a235f_ff == 1 ]
+then
+
 echo -e "\033[34mInstallation will start now\033[0m"
 
 sleep 2
@@ -71,15 +82,82 @@ echo -e "\033[32mEnable Flagships Features\033[0m"
 
 sudo cp features/BuildProp/A235F/build.prop /system && sudo cp features/BuildProp/A235F/build.prop /system > /dev/null 2>&1
 
+echo -e "\033[93mIf you facing error 'System Is Read Only' Just download Root Explorer App and go to system and mount R/W and run the tool again\033[0m"
+echo ""
+
+sleep 5
+
+echo -e "\033[32mAdd S24Ultra Spoofer Module In AFFT_FILES Folder, (You can find this folder in your device files, VERY RECOMMENDED TO INSTALL IT).\033[0m"
+echo""
+sleep 3
+
+mkdir /sdcard/AFFT_FILES ; cp features/S24UltraSpooferModule/S24U_UP1A.231005.007.zip /sdcard/AFFT_FILES
+
+sleep 2
+
+echo "Done"
+echo ""
+echo -e "\033[93mNow everything is good, You should install S24Ultra Spoofer Magisk Module From AFFT_FILES Folder\033[0m"
+echo ""
+sleep 5
+
+echo "Will Back To Main Menu Again"
+sleep 2
+clear ; bash features/BuildProp/A235F/Flagship-Features-A235F.sh
+fi
+
+if [ $user_a235f_ff == 2 ]
+then
+
+echo -e "\033[34mInstallation will start now\033[0m"
+
+sleep 2
+
+echo ""
+
+echo -e "\033[32mGive Termux Storage Permission\033[0m"
+
+termux-setup-storage
+
+sleep 5
+
+echo ""
+
+echo "Done"
+
+echo ""
+
 sleep 1
 
-sudo cp features/FloatingFeatures/floating_feature.xml /system/etc && sudo cp features/FloatingFeatures/floating_feature.xml /system/etc > /dev/null 2>&1
+echo -e "\033[32minstall requireq packages\033[0m"
+
+pkg update ; pkg install tsu ; pkg install mount-utils
 
 sleep 1
 
-sudo cp features/CameraFeatures/camera-feature.xml /system/cameradata && sudo cp features/CameraFeatures/camera-feature.xml /system/cameradata > /dev/null 2>&1
+echo ""
+
+echo -e "\033[31mNow make System R/W for termux\033[0m"
+
+sleep 1
+
+sudo mount -o rw,remount / && sudo mount -o rw,remount / > /dev/null 2>&1
 
 sleep 3
+
+sudo mount -o rw,remount / && sudo mount -o rw,remount / > /dev/null 2>&1 && sudo mount -o rw,remount / && sudo mount -o rw,remount / > /dev/null 2>&1
+
+echo ""
+
+echo "Done"
+
+echo ""
+
+sleep 2
+
+echo -e "\033[32mEnable Flagships Features\033[0m"
+
+sudo cp features/FloatingFeatures/floating_feature.xml /system/etc && sudo cp features/FloatingFeatures/floating_feature.xml /system/etc > /dev/null 2>&1
 
 echo -e "\033[93mIf you facing error 'System Is Read Only' Just download Root Explorer App and go to system and mount R/W and run the tool again\033[0m"
 echo ""
@@ -90,7 +168,84 @@ echo -e "\033[32mAdd S24Ultra Spoofer Module In AFFT_FILES Folder, (You can find
 echo""
 sleep 3
 
-mkdir /sdcard/AFFT_FILES ; cp features/S24UltraSpooferModule/S24Ultra-Spoofer.zip /sdcard/AFFT_FILES
+mkdir /sdcard/AFFT_FILES ; cp features/S24UltraSpooferModule/S24U_UP1A.231005.007.zip /sdcard/AFFT_FILES
+
+sleep 2
+
+echo "Done"
+echo ""
+echo -e "\033[93mNow everything is good, You should install S24Ultra Spoofer Magisk Module From AFFT_FILES Folder\033[0m"
+echo ""
+sleep 5
+
+echo "Will Back To Main Menu Again"
+sleep 3
+clear ; bash features/BuildProp/A235F/Flagship-Features-A235F.sh
+fi
+
+if [ $user_a235f_ff == 2 ]
+then
+
+echo -e "\033[34mInstallation will start now\033[0m"
+
+sleep 2
+
+echo ""
+
+echo -e "\033[32mGive Termux Storage Permission\033[0m"
+
+termux-setup-storage
+
+sleep 5
+
+echo ""
+
+echo "Done"
+
+echo ""
+
+sleep 1
+
+echo -e "\033[32minstall requireq packages\033[0m"
+
+pkg update ; pkg install tsu ; pkg install mount-utils
+
+sleep 1
+
+echo ""
+
+echo -e "\033[31mNow make System R/W for termux\033[0m"
+
+sleep 1
+
+sudo mount -o rw,remount / && sudo mount -o rw,remount / > /dev/null 2>&1
+
+sleep 3
+
+sudo mount -o rw,remount / && sudo mount -o rw,remount / > /dev/null 2>&1 && sudo mount -o rw,remount / && sudo mount -o rw,remount / > /dev/null 2>&1
+
+echo ""
+
+echo "Done"
+
+echo ""
+
+sleep 2
+
+echo -e "\033[32mEnable Flagships Features\033[0m"
+
+sudo cp features/CameraFeatures/camera-feature.xml /system/cameradata && sudo cp features/CameraFeatures/camera-feature.xml /system/cameradata > /dev/null 2>&1
+
+echo -e "\033[93mIf you facing error 'System Is Read Only' Just download Root Explorer App and go to system and mount R/W and run the tool again\033[0m"
+echo ""
+
+sleep 5
+
+echo -e "\033[32mAdd S24Ultra Spoofer Module In AFFT_FILES Folder, (You can find this folder in your device files, VERY RECOMMENDED TO INSTALL IT).\033[0m"
+echo""
+sleep 3
+
+mkdir /sdcard/AFFT_FILES ; cp features/S24UltraSpooferModule/S24U_UP1A.231005.007.zip /sdcard/AFFT_FILES
 
 sleep 2
 
@@ -103,4 +258,9 @@ sleep 5
 echo "Will Back To Main Menu Again"
 sleep 3
 
-clear ; bash AFFT.sh
+clear ; bash features/BuildProp/A235F/Flagship-Features-A235F.sh
+fi
+if [ $user_a235f_ff == 0 ]
+then
+bash AFFT.sh
+fi
