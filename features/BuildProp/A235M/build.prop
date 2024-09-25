@@ -297,8 +297,41 @@ ro.audio.spatializer_enabled=true
 ro.audio.spatializer_enabled=true
 ro.netflix.bsp_rev=Q6115-31409-1
 ####################################
-# AFFT V6.3.0 - Stable Tweaks
+# AFFT V7.1.0 - Stable Tweaks
 ####################################
+# Circle to search
+ro.com.google.cdb.spa1=bsxasm1
+ro.bbt.support.circle2search=true
+# Camera Tweaks -> Improves audio and video recording quality
+ro.media.enc.jpeg.quality=100
+ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+ro.media.capture.maxres=8m
+ro.media.panorama.defres=3264×1840
+ro.media.panorama.frameres=1280×720
+ro.camcorder.videoModes=true
+ro.media.enc.hprof.vid.fps=65
+ro.camera.enableCamera1MaxZsl=1
+camera.disable_zsl_mode=1
+# Faster streaming videos
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+media.stagefright.enable-rtsp=true
+media.stagefright.enable-record=false
+# Disables built in error reporting
+profiler.force_disable_err_rpt=1
+profiler.force_disable_ulog=1
+# Disables logcat
+logcat.live=disable
+# Phone rings immediately
+ro.telephony.call_ring.delay=0
+ring.delay=0
+# Saves power
+ro.ril.disable.power.collapse=1
+pm.sleep_mode=1
+windowsmgr.max_events_per_sec=60
+wifi.supplicant_scan_interval=180
 # Faster boot time
 persist.sys.shutdown.mode=hibernate
 ro.config.hw_quickpoweron=true
@@ -308,33 +341,22 @@ ro.max.fling_velocity=15000
 ro.min.fling_velocity=8000 
 ro.min_pointer_dur=8
 touch.pressure.scale=0.1
+# Vulkan X6739
+debug.hwui.renderer=vulkan
+debug.renderengine.backend=vulkan
+vendor.debug.renderengine.backend=vulkan
+ro.hwui.hardware.vulkan=true
+ro.hwui.use_vulkan=true
+# Disable Locating
+ro.com.google.locationfeatures=0
+ro.com.google.networklocation=0
 # Enable Multi User
 fw.max_users=5
 fw.show_multiuserui=1
 fw.showhiddenusers=1 
 fw.poweruserswitcher=1
-# FPS Stabilizer
-debug.sf.showupdates=0
-debug.sf.showcpu=0
-debug.sf.showbackground=0
-debug.sf.showfps=0
-#Disables sending of usage data
-ro.config.nocheckin=1
-#makes apps load faster and frees more ram.
-dalvik.vm.dexopt-flags=m=y,v=n,o=v,u=n
-# Save Battery Without Performance Drop
-pm.sleep_mode=1
-ro.ril.disable.power.collapse=0
-wifi.supplicant_scan_interval=180
-# Change Default Rendering Driver To Vulkan
-debug.hwui.renderer=vulkan
-# Disables blackscreen issue after a call
-ro.lge.proximity.delay=25
-mot.proximity.delay=25
-# Better RAM Management
-ro.HOME_APP_ADJ = 1
-# Disable Android logger – log-cat
-logcat.live=disable
+#Safetynet
+ro.knox.enhance.zygote.aslr=1
 ####################################
 # End of AFFT Tool Tweaks
 ####################################
