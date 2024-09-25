@@ -9,7 +9,7 @@
 
 <br />
 
-# V7.0.0 - Stable Released
+# V7.1.0 - Stable Released
 
 </div>
 
@@ -19,8 +19,8 @@
 - High-End Animations
 - Performance Profile
 - Processing Speed
-- Smooth Scroll
-- Smooth UI
+- Better Responsiveness & Speed
+- Smooth UI & Scroll
 - Reduce Lags
 - Save Battery Without Performance Drop
 - Dolby Atmos without Headsets
@@ -29,17 +29,25 @@
 - Flagship Edge Ligthining+
 - Multi Users
 - Faster Boot
-- Better Responsiveness & Speed
-- FPS Stabilizer
-- Samsung Ai
+- Samsung AI
 - Screen Recorder
-- Call Recorder
-- Disables sending of usage data
-- Makes apps load faster and frees more ram
 - Reduce Animations
-- Add Mic Focus Mode
-- Disables blackscreen issue after a call
-- Fun Features, a new section that include a lot of funny things like( "Scamsung" Bootanimation)
+- Mic Focus Mode
+- Camera Tweaks -> Improves audio and video recording quality
+- Faster streaming videos
+- Disables built in error reporting
+- Disables logcat
+- Phone rings immediately
+- Vulkan as default rendering driver
+- Vulkan Tweaks (Vulkan X6739)
+- Disable Locating
+- Safetynet (Maybe not working well)
+- Battery Information
+- Instant Slow Motion in Gallery
+- Force Device Refresh Rate To 120hz
+
+> [!IMPORTANT]
+> **i know the device is only 90hz but when i forced it to 120 instead of 90 the device is smoothness than before, It's like Unlock FPS for games modules, Unlock the highest FPS in the game (Like 120FPS in PUBG although your device is only 90hz, but you find the game experience is better than set the FPS to 90FPS only.**
 
 📷Camera:
 - Support Scene Optimizer
@@ -49,14 +57,10 @@
 - Pro Video
 - Super Steady
 - Hyperlapse
-- Live Blur
-- Post Processing Features 
-- HEIF format
+- Post Processing Features
 - camera assistant
 - Improved HDR
-- Expert RAW
 - Motion Photo
-- Take Photos While Recording Video
 
 ### First
 
@@ -83,3 +87,9 @@ git clone https://github.com/mrx7014/AFFT ; cd AFFT ; chmod +x AFFT.sh ; ./AFFT.
 <br>
 
 **Now tool is working, Have Fun :)**
+
+<hr>
+
+# Credits:
+
+<a href="https://t.me/A235channel">**A23 Telegram Channel**</a>
