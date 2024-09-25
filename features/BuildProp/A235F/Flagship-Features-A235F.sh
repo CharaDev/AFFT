@@ -26,6 +26,7 @@ echo ""
 echo "1: Build Prop"
 echo "2: Floating Features"
 echo "3: Camera Features"
+echo "4: Force Refresh Rate to 120hz"
 echo "0: Back to main menu"
 read -p "Choose: " user_a235f_ff
 
@@ -91,7 +92,7 @@ echo -e "\033[32mAdd S24Ultra Spoofer Module In AFFT_FILES Folder, (You can find
 echo""
 sleep 3
 
-mkdir /sdcard/AFFT_FILES ; cp features/S24UltraSpooferModule/S24U_UP1A.231005.007.zip /sdcard/AFFT_FILES
+mkdir /sdcard/AFFT_FILES ; cp features/S24UltraSpooferModule/S24USpoofer-V3.2.0-SamsungOnly.zip /sdcard/AFFT_FILES
 
 sleep 2
 
@@ -168,7 +169,7 @@ echo -e "\033[32mAdd S24Ultra Spoofer Module In AFFT_FILES Folder, (You can find
 echo""
 sleep 3
 
-mkdir /sdcard/AFFT_FILES ; cp features/S24UltraSpooferModule/S24U_UP1A.231005.007.zip /sdcard/AFFT_FILES
+mkdir /sdcard/AFFT_FILES ; cp features/S24UltraSpooferModule/S24USpoofer-V3.2.0-SamsungOnly.zip /sdcard/AFFT_FILES
 
 sleep 2
 
@@ -183,7 +184,7 @@ sleep 3
 clear ; bash features/BuildProp/A235F/Flagship-Features-A235F.sh
 fi
 
-if [ $user_a235f_ff == 3 ]
+if [ $user_a235f_ff == 2 ]
 then
 
 echo -e "\033[34mInstallation will start now\033[0m"
@@ -245,7 +246,7 @@ echo -e "\033[32mAdd S24Ultra Spoofer Module In AFFT_FILES Folder, (You can find
 echo""
 sleep 3
 
-mkdir /sdcard/AFFT_FILES ; cp features/S24UltraSpooferModule/S24U_UP1A.231005.007.zip /sdcard/AFFT_FILES
+mkdir /sdcard/AFFT_FILES ; cp features/S24UltraSpooferModule/S24USpoofer-V3.2.0-SamsungOnly.zip /sdcard/AFFT_FILES
 
 sleep 2
 
@@ -258,6 +259,25 @@ sleep 5
 echo "Will Back To Main Menu Again"
 sleep 3
 
+clear ; bash features/BuildProp/A235F/Flagship-Features-A235F.sh
+fi
+if [ $user_a235f_ff == 4 ]
+then
+echo "Will Force Device Refresh Rate To 120hz"
+sleep 1
+echo ""
+echo "[*]Note: i know the device is only 90hz but when i forced it to 120 instead of 90 the device is smoothness than before, It's like Unlock FPS for games modules, Unlock the highest FPS in the game (Like 120FPS in PUBG although your device is only 90hz, but you find the game experience is better than set the FPS to 90FPS only."
+echo ""
+sleep 10
+echo "Forcing Refresh Rate to 120hz"
+sleep 1
+su -c settings put system min_refresh_rate 120 && su -c settings put system peak_refresh_rate 120
+echo ""
+echo "Done"
+sleep 1
+echo ""
+echo "Will back to main menu again"
+sleep 2
 clear ; bash features/BuildProp/A235F/Flagship-Features-A235F.sh
 fi
 if [ $user_a235f_ff == 0 ]
