@@ -92,7 +92,7 @@ echo -e "\033[32mAdd S24Ultra Spoofer Module In AFFT_FILES Folder, (You can find
 echo""
 sleep 3
 
-mkdir /sdcard/AFFT_FILES ; cp features/S24UltraSpooferModule/S24USpoofer-V3.2.0-SamsungOnly.zip /sdcard/AFFT_FILES
+mkdir /sdcard/AFFT_FILES ; cp features/S24UltraSpooferModule/S24USpoofer-V4.0.0-SamsungOnly.zip /sdcard/AFFT_FILES
 
 sleep 2
 
@@ -169,7 +169,7 @@ echo -e "\033[32mAdd S24Ultra Spoofer Module In AFFT_FILES Folder, (You can find
 echo""
 sleep 3
 
-mkdir /sdcard/AFFT_FILES ; cp features/S24UltraSpooferModule/S24USpoofer-V3.2.0-SamsungOnly.zip /sdcard/AFFT_FILES
+mkdir /sdcard/AFFT_FILES ; cp features/S24UltraSpooferModule/S24USpoofer-V4.0.0-SamsungOnly.zip /sdcard/AFFT_FILES
 
 sleep 2
 
@@ -246,7 +246,7 @@ echo -e "\033[32mAdd S24Ultra Spoofer Module In AFFT_FILES Folder, (You can find
 echo""
 sleep 3
 
-mkdir /sdcard/AFFT_FILES ; cp features/S24UltraSpooferModule/S24USpoofer-V3.2.0-SamsungOnly.zip /sdcard/AFFT_FILES
+mkdir /sdcard/AFFT_FILES ; cp features/S24UltraSpooferModule/S24USpoofer-V4.0.0-SamsungOnly.zip /sdcard/AFFT_FILES
 
 sleep 2
 
