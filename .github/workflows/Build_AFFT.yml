@@ -2,10 +2,7 @@ name: Build AFFT Module
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - Module
-
+  
 jobs:
   build:
     if: github.event.repository.owner.id == github.event.sender.id
