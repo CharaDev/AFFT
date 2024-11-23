@@ -1,30 +1,38 @@
-name: Build AFFT Module
+name: Build AFFT Magisk Module
 
 on:
   workflow_dispatch:
-  
+
 jobs:
   build:
-    runs-on: ubuntu-latest
+    name: Build AFFT Magisk Module
+    runs-on: ubuntu-20.04
     steps:
+      - uses: actions/checkout@v3
+      
+      - name: Install Required Packages
+        run: |
+          sudo apt update
 
-    - name: Check Out
-      uses: actions/checkout@v4
+      - name: Clone AFFT
+        run: git clone https://github.com/mrx7014/AFFT
 
-    - name: Create AFFT Zip Archive
-      run: |
-       git clone https://github.com/mrx7014/AFFT
-       cd AFFT
-       zip -r AFFT-V8.0.0 . -x ".git*" -x ".github*" -x "AFFT_Banner.jpg" -x "README.md"
+      - name: Create AFFT Zip
+        run: |
+          cd AFFT
+          zip -r AFFT-V8.0.0.zip . -x ".git*" -x ".github*" -x "AFFT_Banner.jpg" -x "LICENSE" -x "README.md"
+    
+      - name: Create a tag
+        run: |
+          git tag ${{ github.run_id }}
+          git push origin ${{ github.run_id }}
 
-    - name: Upload to Release
-      uses: softprops/action-gh-release@v1
-      with:
-        files: |
-          AFFT/AFFT-V8.0.0.zip
-        name: AFFT Magisk Module
-        tag_name: ${{ github.run_id }}
-        body: |
-          Device: Samsung Galaxy A23 4G
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload AFFT to Releases
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            AFFT/AFFT-V8.0.0.zip
+          tag_name: ${{ github.run_id }}
+          release_name: AFFT
+          body: |
+            ${{ github.run_id }}
