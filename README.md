@@ -95,7 +95,7 @@
 - Higher Gallery Zoom Quality
 - Video Auto FPS
 
-<hr>
+<br>
 
 # Credits:
 
