@@ -1,6 +1,6 @@
 # AFFT - Turn your A23 To Samsung Flagship
 
-<div align="center"><img src="AFFT_banner.jpg">
+<div align="center"><img src="AFFT_Banner.jpg">
   
 **A Magisk Module To Enable Samsung Flagship Devices Features on Samsung A23 4G**
 
