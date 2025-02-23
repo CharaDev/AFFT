@@ -124,12 +124,12 @@ REPLACE="
 print_modname() {
 
 ui_print "******************************************"
-ui_print " AFFT - Turn Your A23 To Samsung Flagship "
+ui_print " TFFT - Turn Your Tab A7 To Samsung Flagship "
 ui_print "                By: MRX7014                 "
 ui_print "******************************************"
 sleep 2
 ui_print "******************************************"
-ui_print "* Applying AFFT Tweaks for Galaxy A23   *"
+ui_print "* Applying TFFT Tweaks for Galaxy Tab A7   *"
 ui_print "******************************************"
 sleep 1
 ui_print "- High-End Animations"
