@@ -2,6 +2,7 @@ name: Build TFFT Magisk Module
 
 on:
   workflow_dispatch:
+  
    inputs:
       tag_name:
         description: 'Tag name to build (e.g., v1.0.0)'
@@ -11,11 +12,11 @@ on:
 jobs:
   build:
     name: Build TFFT Magisk Module
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       
-      - name: Create AFFT Zip
+      - name: Create TFFT Zip
         run: |
           zip -r TFFT-${{ github.event.inputs.tag_name }}.zip . -x ".git*" -x ".github*" -x "AFFT_Banner.jpg" -x "README.md"
     
