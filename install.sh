@@ -1,21 +1,4 @@
 ##########################################################################################
-#
-# Magisk Module Installer Script
-#
-##########################################################################################
-##########################################################################################
-#
-# Instructions:
-#
-# 1. Place your files into system folder (delete the placeholder file)
-# 2. Fill in your module's info into module.prop
-# 3. Configure and implement callbacks in this file
-# 4. If you need boot scripts, add them into common/post-fs-data.sh or common/service.sh
-# 5. Add your additional or modified system properties into common/system.prop
-#
-##########################################################################################
-
-##########################################################################################
 # Config Flags
 ##########################################################################################
 
@@ -25,13 +8,13 @@
 SKIPMOUNT=false
 
 # Set to true if you need to load system.prop
-PROPFILE=false
+PROPFILE=true
 
 # Set to true if you need post-fs-data script
-POSTFSDATA=false
+POSTFSDATA=true
 
 # Set to true if you need late_start service script
-LATESTARTSERVICE=false
+LATESTARTSERVICE=true
 
 ##########################################################################################
 # Replace list
@@ -42,16 +25,15 @@ LATESTARTSERVICE=false
 
 # Construct your list in the following format
 # This is an example
-REPLACE_EXAMPLE="
-/system/app/Youtube
-/system/priv-app/SystemUI
-/system/priv-app/Settings
-/system/framework
-"
+# REPLACE_EXAMPLE="
+# /system/app/Youtube
+# /system/priv-app/SystemUI
+# /system/priv-app/Settings
+# /system/framework
+# "
 
 # Construct your own list here
-REPLACE="
-"
+REPLACE=""
 
 ##########################################################################################
 #
@@ -111,75 +93,176 @@ REPLACE="
 #     for all directories in <directory> (including itself), it will call:
 #       set_perm dir owner group dirpermission context
 #
-##########################################################################################
-##########################################################################################
-# If you need boot scripts, DO NOT use general boot scripts (post-fs-data.d/service.d)
-# ONLY use module scripts as it respects the module status (remove/disable) and is
-# guaranteed to maintain the same behavior in future Magisk releases.
-# Enable boot scripts by setting the flags in the config section above.
-##########################################################################################
+##########################################################################################x
 
 # Set what you want to display when installing your module
-
-print_modname() {
-
+print_modname()
+{
 ui_print "******************************************"
-ui_print " AFFT - Turn Your A23 To Samsung Flagship "
-ui_print "                By: MRX7014                 "
+ui_print "      👑 AFFT - Flagship Experience 👑      "
+ui_print "     Unlock Premium Samsung Features     "
+ui_print "               By: MRX7014                  "
 ui_print "******************************************"
 sleep 2
-ui_print "******************************************"
-ui_print "* Applying AFFT Tweaks for Galaxy A23   *"
-ui_print "******************************************"
+ui_print "🔄 Initializing AFFT Optimization Engine..."
 sleep 1
-ui_print "- High-End Animations"
+ui_print "⚙️ Applying System Enhancements..."
 sleep 1
-ui_print "- Enhanced CPU Responsiveness"
+ui_print "🚀 Boosting CPU Scheduling for Improved Responsiveness"
 sleep 1
-ui_print "- Reduce Lags"
+ui_print "🎨 Enabling High-End Animations for a Smoother UI"
 sleep 1
-ui_print "- Improve Smoothness"
+ui_print "📉 Reducing System Lag & Enhancing Stability"
 sleep 1
-ui_print "- Camera Tweaks"
+ui_print "📷 Unlocking Camera Enhancements & AI-Based Image Processing"
 sleep 1
-ui_print "- Photo Remaster"
+ui_print "🖼️ Enabling Photo Remaster for Sharper, More Detailed Images"
 sleep 1
-ui_print "- SmartManager China"
+ui_print "🔋 Integrating SmartManager China for Advanced Power Management"
 sleep 1
-ui_print "- Multiple AI features"
+ui_print "⚡ Optimizing Background Processes for Better Battery Life"
 sleep 1
-ui_print "- Samsung Galaxy S24 Ultra Custom Boot Animation"
+ui_print "🤖 Enabling AI-Based System Features for a Smarter Experience"
 sleep 1
-ui_print "- Vulkan Tweaks and More"
+ui_print "🎬 Applying Samsung Galaxy S24 Ultra Custom Boot Animation"
 sleep 1
-ui_print "- Done, You must install S24U Spoofer Module, Enjoy the AFFT"
+ui_print "🎮 Activating Vulkan Performance Tweaks for Smoother Gaming"
+sleep 1
+ui_print "✅ AFFT Enhancements Applied Successfully!"
+sleep 2
+ui_print ""
+ui_print "Now Start DT tweaks"
 sleep 3
+ui_print ""
+ui_print "*******************************"
+ui_print "*      DT - Device Tweaker    *"
+ui_print "* Applying Performance Tweaks *"
+ui_print "*******************************"
+sleep 1
+ui_print "- Optimizing boot time... 🚀"
+sleep 1
+ui_print "- Enhancing responsiveness & speed... ⚡"
+sleep 1
+ui_print "- Stabilizing FPS for smoother performance... 🎮"
+sleep 1
+ui_print "- Disabling data collection & tracking... 🔒"
+sleep 1
+ui_print "- Accelerating app launch & freeing RAM... 🏎️"
+sleep 1
+ui_print "- Extending battery life without performance drop... 🔋"
+sleep 1
+ui_print "- Switching rendering driver to Vulkan for better graphics... 🎨"
+sleep 1
+ui_print "- Improving RAM management for efficiency... 🧠"
+sleep 1
+ui_print "- Disabling unnecessary Google Mobile Services (GMS)... 📉"
+sleep 1
+ui_print "- Enabling aggressive RAM killer (Prop tweak)... 🗑️"
+sleep 1
+ui_print "- Stopping unnecessary log sending... 🚫"
+sleep 1
+ui_print "- Enabling hardware acceleration for smoother graphics... 🖥️"
+sleep 1
+ui_print "- Adding Vulkan X6739 properties... 🔧"
+sleep 1
+ui_print "- Updating Vulkan version to 1.3... 🆕"
+sleep 2
+ui_print "✅ DT Enhancements Applied Successfully!"
+sleep 2
+ui_print ""
+ui_print "- Now start YAKT script 📃"
+sleep 2
+ui_print "- Reduces Jitter and Latency"
+sleep 1
+ui_print "- Optimizes Ram Management"
+sleep 1
+ui_print "- Disables scheduler logs/stats"
+sleep 1
+ui_print "- Disables printk logs"
+sleep 1
+ui_print "- Disables SPI CRC"
+sleep 1
+ui_print "- Tweaks mglru"
+sleep 1
+ui_print "- Allows sched boosting on top-app tasks (Thx to tytydraco)"
+sleep 1
+ui_print "- Tweaks uclamp scheduler (Credits to darkhz for uclamp tweak)"
+sleep 1
+ui_print "- Sets -20 (highest priority) for the most essential processes"
+sleep 1
+ui_print "- Uses Google's schedutil rate-limits from Pixel 3"
+sleep 4
+ui_print "✅ YAKT Enhancements Applied Successfully!"
+sleep 2
+ui_print ""
+ui_print "🎉 Enjoy Your Upgraded Galaxy A23! 🎉"
 }
 
 # Copy/extract your module files into $MODPATH in on_install.
+on_install()
+{
+    $BOOTMODE || abort "! Dfps cannot be installed in recovery."
 
-on_install() {
-  # The following is the default implementation: extract $ZIPFILE/system to $MODPATH
-  # Extend/change the logic to whatever you want
-  ui_print "- Extracting module files"
-  unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
-  ui_print "- deleting package cache"
-  rm -rf /data/system/package_cache/*
+    ui_print "- Extracting module files"
+    unzip -o "$ZIPFILE" -x 'META-INF/*' -d $MODPATH > /dev/null
+
+    ui_print ""
+    local cfg_dir
+    cfg_dir="/sdcard/Android/yc/dfps"
+    mkdir -p $cfg_dir
+    cp $MODPATH/config/dfps_help_cn.md $cfg_dir
+    cp $MODPATH/config/dfps_help_en.md $cfg_dir
+    if [ ! -e "$cfg_dir/dfps.txt" ]; then
+        cp $MODPATH/config/dfps.txt $cfg_dir/dfps.txt
+    fi
+    ui_print ""
+    }
+# shellcheck disable=SC2148
+# shellcheck disable=SC2034
+SKIPUNZIP=1
+RM_RF() {
+rm /sdcard/Documents/yakt/yakt.log 2>/dev/null
+rm /sdcard/yakt.log 2>/dev/null
+rm /sdcard/yakt/yakt.txt 2>/dev/null
+rm "${MODPATH}/yakt.log" 2>/dev/null
+rm "${MODPATH}/yakt-logging-error.log" 2>/dev/null
+rm "${MODPATH}/LICENSE" 2>/dev/null
+rm "${MODPATH}/README.md" 2>/dev/null
 }
-
+SET_PERMISSION() {
+ui_print "Install YAKT first to use yakt.sh"
+ui_print "- Setting YAKT Permissions"
+set_perm_recursive "$MODPATH" 0 0 0755 0644
+set_perm_recursive "${MODPATH}/yakt.sh" 0 0 0755 0700
+}
+MOD_EXTRACT() {
+ui_print "- Extracting YAKT Files"
+unzip -o "$ZIPFILE" yakt.sh -d "$MODPATH" >&2
+unzip -o "$ZIPFILE" service.sh -d "$MODPATH" >&2
+unzip -o "$ZIPFILE" module.prop -d "$MODPATH" >&2
+}
+MOD_PRINT() {
+ui_print "- YAKT"
+ui_print "- Installing"
+}
+set -x
+RM_RF
+MOD_PRINT
+MOD_EXTRACT
+SET_PERMISSION
+sleep 4
 # Only some special files require specific permissions
 # This function will be called after on_install is done
 # The default permissions should be good enough for most cases
-
-set_permissions() {
-  # The following is the default rule, DO NOT remove
-  set_perm_recursive $MODPATH 0 0 0755 0644
-
-  # Here are some examples:
-  # set_perm_recursive  $MODPATH/system/lib       0     0       0755      0644
-  # set_perm  $MODPATH/system/bin/app_process32   0     2000    0755      u:object_r:zygote_exec:s0
-  # set_perm  $MODPATH/system/bin/dex2oat         0     2000    0755      u:object_r:dex2oat_exec:s0
-  # set_perm  $MODPATH/system/lib/libart.so       0     0       0644
+set_permissions()
+{
+    # Here are some examples:
+    # set_perm_recursive  $MODPATH/system/lib       0     0       0755      0644
+    # set_perm  $MODPATH/system/bin/app_process32   0     2000    0755      u:object_r:zygote_exec:s0
+    # set_perm  $MODPATH/system/bin/dex2oat         0     2000    0755      u:object_r:dex2oat_exec:s0
+    # set_perm  $MODPATH/system/lib/libart.so       0     0       0644
+    set_perm $MODPATH/bin/dfps 0 0 0755 u:object_r:system_file:s0
+    return
 }
 
 # You can add more functions to assist your custom script code

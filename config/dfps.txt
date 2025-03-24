@@ -1,0 +1,62 @@
+# Dynamic screen refresh rate controller config
+# Dfps will automatically reload this config file after modification
+
+/touchSlackMs 500
+/enableMinBrightness 8
+/useSfBackdoor 0
+
+com.miHoYo.Yuanshen 120 120
+com.mobile.legends 120 120
+com.tencent.ig 120 120
+com.mojang.minecraftpe 120 120
+com.mojang.minecraftpe.patch 120 120
+com.hypergryph.arknights 120 120
+com.activision.callofduty.shooter 120 120
+com.activision.callofudty.warzone 120 120
+com.ea.gp.fifamobile 120 120
+com.gameloft.android.ANMP.GloftA9HM 120 120
+com.madfingergames.legends 120 120
+com.pearlabyss.blackdesertm 120 120
+com.pearlabyss.blackdesertm.gl 120 120
+com.garena.game.codm 120 120
+com.tencent.tmgp.kr.codm 120 120
+com.vng.codmvn 120 120
+com.garena.game.kgvn 120 120
+com.netease.lztgglobal 120 120
+com.pubg.imobile 120 120
+com.pubg.krmobile 120 120
+com.rekoo.pubgm 120 120
+com.riotgames.league.wildrift 120 120
+com.riotgames.league.wildrifttw 120 120
+com.riotgames.league.wildriftvn 120 120
+com.riotgames.league.teamfighttactics 120 120
+com.riotgames.league.teamfighttacticstw 120 120
+com.riotgames.league.teamfighttacticsvn 120 120
+com.tencent.tmgp.pubgmhd 120 120
+com.vng.pubgmobile 120 120
+vng.games.revelation.mobile 120 120
+com.ngame.allstar.eu 120 120
+com.YoStar.AetherGazer 120 120
+com.miHoYo.GenshinImpact 120 120
+com.garena.game.lmjx 120 120
+com.epicgames.fortnite 120 120
+com.epicgames.portal 120 120
+com.tencent.lolm 120 120
+jp.konami.pesam 120 120
+com.ea.gp.apexlegendsmobilefps 120 120
+com.mobilelegends.mi 120 120
+com.levelinfinite.hotta.gp 120 120
+com.supercell.clashofclans 120 120
+com.vng.mlbbvn 120 120
+com.levelinfinite.sgameGlobal 120 120
+com.tencent.tmgp.sgame 120 120
+com.dts.freefiremax 120 120
+com.dts.freefireth 120 120
+com.proximabeta.mf.uamo 120 120
+com.tencent.KiHan 120 120
+com.tencent.tmgp.cf 120 120
+com.tencent.tmgp.cod 120 120
+com.tencent.tmgp.gnyx 120 120
+
+- -1 -1
+* 60 120

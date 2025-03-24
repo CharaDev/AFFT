@@ -1,4 +1,4 @@
-# AFFT - Turn your A23 To Samsung Flagship
+# AFFT - Turn your Scamsung glyax a23 to Samsung Galaxy A23 Ultra
 
 <div align="center"><img src="AFFT_Banner.jpg">
   
@@ -9,7 +9,7 @@
 
 <br />
 
-# V8.0.0 Released
+# V9.0.0 Released
 
 </div>
 
@@ -71,6 +71,36 @@
 - China Smart Manager
 - Samsung Galaxy S24 Boot Animation
 - Enable more Screen recorder features
+
+
+⚡DT Tweaks:
+- Faster boot time
+- Better Responsiveness & Speed
+- FPS Stabilizer
+- Disables sending of usage data
+- Makes apps load faster and frees more ram.
+- Save Battery Without Performance Drop
+- Change Default Rendering Driver
+- Better RAM Management
+- Disable Hungry GMS
+- Aggressive Ram Killer (Prop)
+- Kernel Tweaks For Better Battery Usage
+- Zram Setting
+- Stop Send Logs
+- Enable Hardware Acceleration for Graphics Rendering
+
+⚡YAKT Features:
+- Reduces Jitter and Latency
+- Optimizes Ram Management
+- Disables scheduler logs/stats
+- Disables printk logs
+- Disables SPI CRC
+- Tweaks mglru
+- Allows sched boosting on top-app tasks (Thx to tytydraco)
+- Tweaks uclamp scheduler (Credits to darkhz for uclamp tweak)
+- Sets -20 (highest priority) for the most essential processes
+- Uses Google's schedutil rate-limits from Pixel 3- Update Vulkan Verison to 1.3
+
 
 📷Camera:
 - Support Scene Optimizer
